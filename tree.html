@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Viola - Sheet 7</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #e9f2f9;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #8dd0ec;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .main {
+      margin-left: 270px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .tableauPlaceholder {
+      width: 100%;
+      height: 100vh;
+      min-height: 800px;
+    }
+
+    object.tableauViz {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>My Dashboard</h2>
+    <a href="index.html"><button>🏠 Dashboard</button></a>
+    <a href="bar.html"><button>📊 Bar Chart</button></a>
+    <a href="line.html"><button>📈 Line Chart</button></a>
+    <a href="pie.html"><button>🥧 Pie Chart</button></a>
+    <a href="map.html"><button>📍 Map Chart</button></a>
+    <a href="scatter.html"><button>🔵 Scatter Chart</button></a>
+    <a href="bubble.html"><button>🔘 Bubble Chart</button></a>
+    <a href="tree.html"><button>🌲 Tree Chart</button></a>
+    <a href="gantt.html"><button>📆 Gantt Chart</button></a>
+    <a href="lolypop.html"><button>🍭 Lolypop Chart</button></a>
+    <a href="word.html"><button>🔤 Word Chart</button></a>
+    <a href="box.html"><button>🗃️ Box Plot</button></a>
+    <a href="histogram.html"><button>📶 Histogram Chart</button></a>
+  </div>
+
+  <!-- Embed Tableau Sheet7 -->
+  <div class="main">
+    <div class="tableauPlaceholder" id="tableauVizContainer">
+      <noscript>
+        <a href="https://public.tableau.com/views/TUGASPAKDODY/Sheet7">
+          <img alt="Sheet 7" src="https://public.tableau.com/static/images/TU/TUGASPAKDODY/Sheet7/1.png" style="border: none;" />
+        </a>
+      </noscript>
+      <object class="tableauViz">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="TUGASPAKDODY/Sheet7" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="language" value="en-US" />
+      </object>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const container = document.getElementById("tableauVizContainer");
+    const viz = container.getElementsByTagName("object")[0];
+    const script = document.createElement("script");
+    script.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    viz.parentNode.insertBefore(script, viz);
+  </script>
+
+</body>
+</html>
